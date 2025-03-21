@@ -70,6 +70,5 @@ public class addtocart {
             System.out.println("Item not found in cart.");
         }
         driver.quit();
-
     }
 }
