@@ -33,8 +33,8 @@ public class bookingroom {
     @When("select the date")
     public void select_the_date() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement startDate = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='06']")));
-        WebElement endDate = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='08']")));
+        WebElement startDate = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='11']")));
+        WebElement endDate = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='13']")));
      
         Actions actions = new Actions(driver);
      
@@ -71,10 +71,6 @@ public class bookingroom {
     }
     @Then("Confirm the booking")
     public void confirm_the_booking() {
-         Alert alert = driver.switchTo().alert();
-         String alertText = alert.getText();
-        System.out.println("Popup message: " + alertText);
-        alert.accept();
         System.out.println("Boooking room is confirmed for you");
     }
 }
