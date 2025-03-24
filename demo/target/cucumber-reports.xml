@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="131.653" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-03-23T13:44:47.347569800Z">
+<testcase classname="Add a book to the cart" name="User adds a book to the cart and verifies it" time="15.182">
+<system-out><![CDATA[
+Given User is on the homepage...............................................passed
+When User clicks on the category............................................passed
+And User selects a book from the list.......................................passed
+And User clicks on the cart button..........................................passed
+Then The book should be added to the cart...................................passed
+And The cart should display the selected book...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking Room" name="Booking a room" time="7.912">
+<system-out><![CDATA[
+Given Open the booking application..........................................passed
+When select the room........................................................passed
+And select the date.........................................................passed
+And Enter the details.......................................................passed
+Then Book the ticket........................................................passed
+And Confirm the booking.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Computer Database Management" name="Search for a computer in the database" time="3.476">
+<system-out><![CDATA[
+Given the user opens the computer database application......................passed
+When the list of computers is displayed.....................................passed
+And the user searches for a computer by name................................passed
+Then the search results should display the correct computer.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Placing Order" name="Placing an Order" time="81.14">
+<system-out><![CDATA[
+Given Open the application..................................................passed
+When Select the category....................................................passed
+And View the product........................................................passed
+And Choose the size.........................................................passed
+And Choose the color........................................................passed
+Then Add the product to cart................................................passed
+And verify the message......................................................passed
+And Verify the item added to cart...........................................passed
+And Enter the shipping details..............................................passed
+And Click Place an Order....................................................passed
+And Verify the confirmation message.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search a Book" name="Find a Book - #1.1" time="6.247">
+<system-out><![CDATA[
+Given I open the application................................................passed
+When I search for the book by "l"...........................................passed
+Then I should see the book appear in the results............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search a Book" name="Find a Book - #1.2" time="4.761">
+<system-out><![CDATA[
+Given I open the application................................................passed
+When I search for the book by "ile".........................................passed
+Then I should see the book appear in the results............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search a Book" name="Find a Book - #1.3" time="4.511">
+<system-out><![CDATA[
+Given I open the application................................................passed
+When I search for the book by "le"..........................................passed
+Then I should see the book appear in the results............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search a Book" name="Find a Book - #1.4" time="4.162">
+<system-out><![CDATA[
+Given I open the application................................................passed
+When I search for the book by "Agile".......................................passed
+Then I should see the book appear in the results............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search a Book" name="Find a Book - #1.5" time="4.022">
+<system-out><![CDATA[
+Given I open the application................................................passed
+When I search for the book by "sjdhjsdh"....................................passed
+Then I should see the book appear in the results............................passed
+]]></system-out>
+</testcase>
+</testsuite>

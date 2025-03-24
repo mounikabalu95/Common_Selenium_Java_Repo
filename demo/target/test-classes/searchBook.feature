@@ -10,5 +10,6 @@ Examples:
     | value|
     | "l" |
     | "ile" |
+    | "le" |
     | "Agile" |
     |"sjdhjsdh"|
