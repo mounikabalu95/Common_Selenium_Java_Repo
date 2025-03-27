@@ -2,8 +2,6 @@ package stepDefinitions;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.logging.FileHandler;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
@@ -105,7 +103,7 @@ public class linkSite {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", badrequestLink);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", unauthorisedLink);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", forbiddwnLink);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", badrequestLink);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", invalidLink);
         
         
 
@@ -133,6 +131,7 @@ public class linkSite {
         unauthorisedLink.click();
         forbiddwnLink.click();
         badrequestLink.click();
+        invalidLink.click();
 
         // Wait for and verify response message
         WebElement responseMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("linkResponse")));
